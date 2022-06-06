@@ -16,7 +16,7 @@
     "build": "yarn rimraf dist && tsc",
     "lint": "eslint --max-warnings 0 .",
     "prepack": "yarn build",
-    "prepare": "husky install",
+    "prepare": "husky install && yarn build",
     "test": "jest"
   },
   "repository": {
